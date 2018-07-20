@@ -1,11 +1,11 @@
 import * as React from "react";
-import "./IntangibleList.css";
+import "./List.css";
 
 interface IProps {
 	items: string[];
 }
 
-export default class IntangibleList extends React.Component<IProps> {
+export default class List extends React.Component<IProps> {
 	public render() {
 		const items = this.props.items.map(item => {
 			return (

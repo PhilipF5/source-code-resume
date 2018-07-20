@@ -3,7 +3,7 @@ import "./App.css";
 
 import ContactInfo from "./components/ContactInfo/ContactInfo";
 import ExperienceList from "./components/ExperienceList/ExperienceList";
-import IntangibleList from "./components/IntangiblesList/IntangibleList";
+import IntangibleList from "./components/IntangibleList/IntangibleList";
 
 import details from "./details.json";
 

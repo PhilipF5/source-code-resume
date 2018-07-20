@@ -1,20 +1,4 @@
-import * as React from "react";
+import List from "../List/List";
 import "./ExperienceList.css";
 
-interface IProps {
-	items: string[];
-}
-
-export default class ExperienceList extends React.Component<IProps> {
-	public render() {
-		const items = this.props.items.map(item => {
-			return (
-				<li key={item}>{item}</li>
-			);
-		});
-
-		return (
-			<ul>{items}</ul>
-		);
-	}
-}
+export default class ExperienceList extends List {}
