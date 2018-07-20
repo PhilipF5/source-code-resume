@@ -1,11 +1,13 @@
 import * as React from "react";
+import { Component } from "react";
+
 import "./ContactInfo.css";
 
 interface IProps {
 	data: any;
 }
 
-export default class ContactInfo extends React.Component<IProps> {
+export default class ContactInfo extends Component<IProps> {
 	public render() {
 		return (
 			<div className="ContactInfo">
