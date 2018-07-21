@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Component } from "react";
 
+import moment from "moment";
+
 import "./Credential.css";
 
 interface IProps {
@@ -17,7 +19,7 @@ export default class Credential extends Component<IProps> {
 			<div className="Credential">
 				<div>
 					<div className="Credential-source">{this.props.source}</div>
-					<div className="Credential-earned">{this.props.earned}</div>
+					<div className="Credential-earned">{moment(this.props.earned).format("YYYY")}</div>
 				</div>
 				<div>
 					<div className="Credential-name">{this.props.name}</div>

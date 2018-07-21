@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Component } from "react";
 
+import moment from "moment";
+
 import "./Job.css";
 
 interface IProps {
@@ -27,7 +29,7 @@ export default class Job extends Component<IProps> {
 						{this.props.employer}, {this.props.location}
 					</div>
 					<div className="Job-dates">
-						{this.props.start} – {this.props.end || "present"}
+						{this.parseDates()}
 					</div>
 				</div>
 				<div className="Job-title">{this.props.title}</div>
@@ -36,5 +38,12 @@ export default class Job extends Component<IProps> {
 				</div>
 			</div>
 		);
+	}
+
+	public parseDates(): string {
+		const start = moment(this.props.start).format("MMM YYYY");
+		const end = this.props.end ? moment(this.props.end).format("MMM YYYY") : "present";
+
+		return `${start} – ${end}`;
 	}
 }
