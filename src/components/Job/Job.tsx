@@ -3,25 +3,14 @@ import { Component } from "react";
 
 import moment from "moment";
 
-import List from "components/List/List";
-import SyntacticEngine from "utilities/SyntacticEngine";
+import { List } from "components/List/List";
+import { JobData } from "models/JobData";
+import { RoleData } from "models/RoleData";
+import { SyntacticEngine } from "utilities/SyntacticEngine";
 
 import "./Job.css";
 
-interface IProps {
-	employer: string;
-	location: string;
-	roles: Role[];
-}
-
-interface Role {
-	end?: string;
-	highlights: string[];
-	start: string;
-	title: string;
-}
-
-export default class Job extends Component<IProps> {
+export class Job extends Component<JobData> {
 	public render() {
 		return (
 			<div className="Job">
@@ -45,7 +34,7 @@ export default class Job extends Component<IProps> {
 		);
 	}
 
-	public getJob(r: Role): JSX.Element {
+	public getJob(r: RoleData): JSX.Element {
 		return SyntacticEngine.addPropertyLabel(
 			"job",
 			SyntacticEngine.addCurlyBrackets(
@@ -87,11 +76,11 @@ export default class Job extends Component<IProps> {
 		return moment(date).format("YYYY-MM-DD");
 	}
 
-	private getEndDate(role: Role): string {
+	private getEndDate(role: RoleData): string {
 		return role.end ? this.getDate(role.end) : null;
 	}
 
-	private getStartDate(role: Role): string {
+	private getStartDate(role: RoleData): string {
 		return this.getDate(role.start);
 	}
 }

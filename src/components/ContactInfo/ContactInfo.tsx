@@ -1,28 +1,31 @@
 import * as React from "react";
 import { Component } from "react";
 
-import SocialButton from "../SocialButton/SocialButton";
-import SyntacticEngine from "utilities/SyntacticEngine";
+import { SocialButton } from "components/SocialButton/SocialButton";
+import { ContactData } from "models/ContactData";
+import { SyntacticEngine } from "utilities/SyntacticEngine";
 
 import "./ContactInfo.css";
 
-interface IProps {
-	data: any;
+interface Props {
+	bio: string;
+	contacts: ContactData[];
+	name: string;
 }
 
-export default class ContactInfo extends Component<IProps> {
+export class ContactInfo extends Component<Props> {
 	public render() {
 		return (
 			<div className="ContactInfo">
-				<div className="ContactInfo-name">{this.props.data.name}</div>
-				<div className="ContactInfo-bio">{SyntacticEngine.commentInfo(this.props.data.bio)}</div>
+				<div className="ContactInfo-name">{this.props.name}</div>
+				<div className="ContactInfo-bio">{SyntacticEngine.commentInfo(this.props.bio)}</div>
 				<div className="ContactInfo-contact">{this.getSocialButtons()}</div>
 			</div>
 		);
 	}
 
 	public getSocialButtons() {
-		return this.props.data.contact
+		return this.props.contacts
 			.sort((a, b) => {
 				if (a.service < b.service) {
 					return -1;

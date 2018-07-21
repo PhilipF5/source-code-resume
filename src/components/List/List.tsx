@@ -1,14 +1,15 @@
 import * as React from "react";
+import { Component } from "react";
 
-import ListItem from "components/ListItem/ListItem";
+import { ListItem } from "components/ListItem/ListItem";
 
 import "./List.css";
 
-interface IProps {
+interface Props {
 	items: string[];
 }
 
-export default class List extends React.Component<IProps> {
+export class List extends Component<Props> {
 	public render() {
 		const items = this.props.items.map(item => {
 			return <ListItem key={item}>{item}</ListItem>;

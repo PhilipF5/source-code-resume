@@ -1,20 +1,12 @@
 import * as React from "react";
 import { Component } from "react";
 
-import SyntacticEngine from "utilities/SyntacticEngine";
+import { CredentialData } from "models/CredentialData";
+import { SyntacticEngine } from "utilities/SyntacticEngine";
 
 import "./Credential.css";
 
-interface IProps {
-	distinction: string;
-	earned: string;
-	location: { city: string; state: string };
-	name: string;
-	source: string;
-	topic: string;
-}
-
-export default class Credential extends Component<IProps> {
+export class Credential extends Component<CredentialData> {
 	public render() {
 		return (
 			<div className="Credential">

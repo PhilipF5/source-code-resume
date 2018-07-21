@@ -1,4 +1,5 @@
-import List from "../List/List";
+import { List } from "../List/List";
+
 import "./IntangibleList.css";
 
-export default class IntangibleList extends List {}
+export class IntangibleList extends List {}

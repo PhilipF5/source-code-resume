@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default class SyntacticEngine {
+export class SyntacticEngine {
 	public static addCurlyBrackets(level: number, ...contents: JSX.Element[]): JSX.Element {
 		return (
 			<span>

@@ -4,15 +4,11 @@ import { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookMessenger, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
+import { ContactData } from "models/ContactData";
+
 import "./SocialButton.css";
 
-interface Props {
-	link: string;
-	service: "GitHub" | "LinkedIn" | "Messenger" | "Twitter";
-	text: string;
-}
-
-export default class SocialButton extends Component<Props> {
+export class SocialButton extends Component<ContactData> {
 	public render() {
 		return (
 			<div className="SocialButton">

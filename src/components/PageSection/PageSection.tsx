@@ -1,15 +1,15 @@
 import * as React from "react";
 import { Component } from "react";
 
-import SyntacticEngine from "utilities/SyntacticEngine";
+import { SyntacticEngine } from "utilities/SyntacticEngine";
 
 import "./PageSection.css";
 
-interface IProps {
+interface Props {
 	title: string;
 }
 
-export default class PageSection extends Component<IProps> {
+export class PageSection extends Component<Props> {
 	public render() {
 		return (
 			<div className="PageSection">

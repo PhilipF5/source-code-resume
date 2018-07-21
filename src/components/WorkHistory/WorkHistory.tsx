@@ -1,19 +1,23 @@
 import * as React from "react";
 import { Component } from "react";
 
-import Job from "../Job/Job";
-import PageSection from "../PageSection/PageSection";
+import { Job } from "components/Job/Job";
+import { PageSection } from "components/PageSection/PageSection";
+import { JobData } from "models/JobData";
+
 import "./WorkHistory.css";
 
-interface IProps {
-	jobs: any[];
+interface Props {
+	jobs: JobData[];
 }
 
-export default class WorkHistory extends Component<IProps> {
+export class WorkHistory extends Component<Props> {
 	public render() {
 		const jobs = this.props.jobs
 			.sort((a, b) => {
-				if (a.start > b.start) {
+				let aStart = Math.max(...a.roles.map(r => +r.start.replace(/\-/g, "")));
+				let bStart = Math.max(...b.roles.map(r => +r.start.replace(/\-/g, "")));
+				if (aStart > bStart) {
 					return -1;
 				} else {
 					return 1;

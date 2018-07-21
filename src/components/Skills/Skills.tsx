@@ -1,18 +1,20 @@
 import * as React from "react";
 import { Component } from "react";
 
-import SkillType from "../SkillType/SkillType";
+import { SkillType } from "components/SkillType/SkillType";
+import { SkillData } from "models/SkillData";
+
 import "./Skills.css";
 
 interface Props {
 	data: {
-		languages: any[];
-		technologies: any[];
-		tools: any[];
+		languages: SkillData[];
+		technologies: SkillData[];
+		tools: SkillData[];
 	};
 }
 
-export default class Skills extends Component<Props> {
+export class Skills extends Component<Props> {
 	public render() {
 		return (
 			<div className="Skills">

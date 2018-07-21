@@ -1,15 +1,17 @@
 import * as React from "react";
 import { Component } from "react";
 
-import Credential from "../Credential/Credential";
-import PageSection from "../PageSection/PageSection";
+import { Credential } from "components/Credential/Credential";
+import { PageSection } from "components/PageSection/PageSection";
+import { CredentialData } from "models/CredentialData";
+
 import "./Education.css";
 
-interface IProps {
-	credentials: any[];
+interface Props {
+	credentials: CredentialData[];
 }
 
-export default class Education extends Component<IProps> {
+export class Education extends Component<Props> {
 	public render() {
 		const credentials = this.props.credentials.map(c => (
 			<Credential

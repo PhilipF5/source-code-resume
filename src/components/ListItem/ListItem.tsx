@@ -3,7 +3,7 @@ import { Component } from "react";
 
 import "./ListItem.css";
 
-export default class ListItem extends Component {
+export class ListItem extends Component {
 	public render() {
 		return (
 			<div className="ListItem">

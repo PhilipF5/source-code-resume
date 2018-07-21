@@ -1,4 +1,5 @@
-import List from "../List/List";
+import { List } from "components/List/List";
+
 import "./ExperienceList.css";
 
-export default class ExperienceList extends List {}
+export class ExperienceList extends List {}
