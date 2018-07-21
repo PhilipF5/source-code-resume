@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Component } from "react";
 
+import SocialButton from "../SocialButton/SocialButton";
+
 import "./ContactInfo.css";
 
 interface IProps {
@@ -17,14 +19,26 @@ export default class ContactInfo extends Component<IProps> {
 				<div className="ContactInfo-bio">
 					{this.props.data.bio}
 				</div>
-				<div className="ContactInfo-address">
-					{this.props.data.address.street}<br />
-					{this.props.data.address.city}, {this.props.data.address.state} {this.props.data.address.zipCode}
-				</div>
-				<div className="ContactInfo-email">
-					{this.props.data.email}
+				<div className="ContactInfo-contact">
+					{this.getSocialButtons()}
 				</div>
 			</div>
 		);
+	}
+
+	public getSocialButtons() {
+		return this.props.data.contact
+			.sort((a, b) => {
+				if (a.service < b.service) {
+					return -1;
+				} else {
+					return 1;
+				}
+			})
+			.map(c => {
+				return (
+					<SocialButton key={c.service} link={c.link} service={c.service} text={c.text} />
+				);
+			});
 	}
 }
