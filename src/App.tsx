@@ -6,6 +6,7 @@ import ContactInfo from "./components/ContactInfo/ContactInfo";
 import Education from "./components/Education/Education";
 import ExperienceList from "./components/ExperienceList/ExperienceList";
 import IntangibleList from "./components/IntangibleList/IntangibleList";
+import WorkHistory from "./components/WorkHistory/WorkHistory";
 
 import details from "./details.json";
 
@@ -16,6 +17,7 @@ export default class App extends Component {
 				<ContactInfo data={details.me} />
 				<ExperienceList items={details.experience} />
 				<IntangibleList items={details.intangibles} />
+				<WorkHistory jobs={details.jobs} />
 				<Education credentials={details.education} />
 			</div>
 		);
