@@ -1,12 +1,22 @@
 import * as React from "react";
 
 export class SyntacticEngine {
+	public static addBrackets(level: number, ...contents: JSX.Element[]): JSX.Element {
+		return (
+			<span>
+				{this.bracketLeft(level)}
+				{contents}
+				{this.bracketRight(level)}
+			</span>
+		);
+	}
+
 	public static addCurlyBrackets(level: number, ...contents: JSX.Element[]): JSX.Element {
 		return (
 			<span>
-				<span className={`bracket-${level}`}>&#123;</span>
+				{this.bracketLeftCurly(level)}
 				&nbsp;{contents}&nbsp;
-				<span className={`bracket-${level}`}>&#125;</span>
+				{this.bracketRightCurly(level)}
 			</span>
 		);
 	}
@@ -25,6 +35,22 @@ export class SyntacticEngine {
 				{item1} <span className="keyword">{operator}</span> {item2}
 			</span>
 		);
+	}
+
+	public static bracketLeft(level: number): JSX.Element {
+		return <span className={`bracket-${level}`}>&#91;</span>;
+	}
+
+	public static bracketLeftCurly(level: number): JSX.Element {
+		return <span className={`bracket-${level}`}>&#123;</span>;
+	}
+
+	public static bracketRight(level: number): JSX.Element {
+		return <span className={`bracket-${level}`}>&#93;</span>;
+	}
+
+	public static bracketRightCurly(level: number): JSX.Element {
+		return <span className={`bracket-${level}`}>&#125;</span>;
 	}
 
 	public static camelCase(contents: string): string {
@@ -62,6 +88,10 @@ export class SyntacticEngine {
 		}
 
 		return <span>{joined}</span>;
+	}
+
+	public static indent(): JSX.Element {
+		return <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>;
 	}
 
 	public static keyword(contents: string): JSX.Element {

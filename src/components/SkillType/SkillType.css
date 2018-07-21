@@ -1,0 +1,7 @@
+.SkillType {
+	margin-bottom: 15px;
+}
+
+.SkillType-type .name {
+	font-size: larger;
+}
