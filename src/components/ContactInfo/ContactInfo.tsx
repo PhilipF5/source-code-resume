@@ -2,6 +2,7 @@ import * as React from "react";
 import { Component } from "react";
 
 import SocialButton from "../SocialButton/SocialButton";
+import SyntacticEngine from "utilities/SyntacticEngine";
 
 import "./ContactInfo.css";
 
@@ -17,7 +18,7 @@ export default class ContactInfo extends Component<IProps> {
 					{this.props.data.name}
 				</div>
 				<div className="ContactInfo-bio">
-					{this.props.data.bio}
+					{SyntacticEngine.commentInfo(this.props.data.bio)}
 				</div>
 				<div className="ContactInfo-contact">
 					{this.getSocialButtons()}
