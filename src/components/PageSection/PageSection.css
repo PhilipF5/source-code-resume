@@ -1,3 +1,13 @@
+@media print {
+	.PageSection {
+		page-break-inside: avoid;
+	}
+}
+
+.PageSection {
+	margin-top: 20px;
+}
+
 .PageSection-title {
 	font-size: xx-large;
 }

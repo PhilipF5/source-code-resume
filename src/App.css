@@ -1,48 +1,54 @@
-.App {
-	margin-bottom: 50px;
-	width: 71%;
-}
+@media screen {
+	.App {
+		margin-bottom: 50px;
+		width: 71%;
+	}
 
-.string {
-	color: #ebc06f;
-}
+	.string {
+		color: #ebc06f;
+	}
 
-.bracket-1 {
-	color: #ffd700;
-}
+	.bracket-1 {
+		color: #ffd700;
+	}
 
-.equals {
-	color: #f06372;
-}
+	.bracket-2 {
+		color: #ea64dc;
+	}
 
-.keyword {
-	color: #f06372;
+	.equals {
+		color: #f06372;
+	}
+
+	.keyword {
+		color: #f06372;
+	}
+
+	.reg-comment {
+		color: #5b6371;
+	}
+
+	.alert {
+		color: red;
+	}
+
+	.info {
+		color: #0098e1;
+	}
+
+	.object {
+		color: #47aff5;
+	}
+
+	.name {
+		color: #8bc66f;
+	}
+
+	.type {
+		color: #21b8c4;
+	}
 }
 
 .comment {
 	font-style: italic;
-}
-
-.reg-comment {
-	color: #5b6371;
-}
-
-.alert {
-	color: red;
-}
-
-.info {
-	color: #0098e1;
-}
-
-.object {
-	color: #47aff5;
-}
-
-.name {
-	color: #8bc66f;
-}
-
-.type {
-	color: #21b8c4;
 }

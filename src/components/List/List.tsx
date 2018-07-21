@@ -15,6 +15,6 @@ export class List extends Component<Props> {
 			return <ListItem key={item}>{item}</ListItem>;
 		});
 
-		return <ul>{items}</ul>;
+		return <div>{items}</div>;
 	}
 }
