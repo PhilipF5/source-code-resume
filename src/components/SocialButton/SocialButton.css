@@ -1,0 +1,22 @@
+.SocialButton a {
+	align-items: center;
+	color: inherit;
+	display: flex;
+	text-decoration: none;
+}
+
+.SocialButton-icon {
+	margin-right: 5px;
+}
+
+@media print {
+	.SocialButton-name {
+		display: none;
+	}
+}
+
+@media screen {
+	.SocialButton-text {
+		display: none;
+	}
+}

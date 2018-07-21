@@ -1,0 +1,48 @@
+.App {
+	margin-bottom: 50px;
+	width: 71%;
+}
+
+.string {
+	color: #EBC06F;
+}
+
+.bracket-1 {
+	color: #FFD700;
+}
+
+.equals {
+	color: #F06372;
+}
+
+.keyword {
+	color: #F06372;
+}
+
+.comment {
+	font-style: italic;
+}
+
+.reg-comment {
+	color: #5B6371;
+}
+
+.alert {
+	color: red;
+}
+
+.info {
+	color: #0098E1;
+}
+
+.object {
+	color: #47AFF5;
+}
+
+.name {
+	color: #8BC66F;
+}
+
+.type {
+	color: #21B8C4;
+}
