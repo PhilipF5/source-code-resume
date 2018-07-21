@@ -2,7 +2,7 @@ import * as React from "react";
 import { Component } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookMessenger, faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookMessenger, faGithub, faLinkedin, faSafari, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 import { ContactData } from "models/ContactData";
 
@@ -31,6 +31,8 @@ export class SocialButton extends Component<ContactData> {
 				return faFacebookMessenger;
 			case "Twitter":
 				return faTwitter;
+			case "Website":
+				return faSafari;
 		}
 	}
 }
