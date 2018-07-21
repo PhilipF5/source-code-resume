@@ -22,8 +22,6 @@ export default class Education extends Component<IProps> {
 			/>
 		));
 
-		return (
-			<PageSection title="Education">{credentials}</PageSection>
-		);
+		return <PageSection title="Education">{credentials}</PageSection>;
 	}
 }

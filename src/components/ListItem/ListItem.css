@@ -8,26 +8,26 @@
 	margin-right: 20px;
 }
 
-.ListItem:nth-child(6n+1) .ListItem-marker {
-	color: #F06372;
+.ListItem:nth-child(6n + 1) .ListItem-marker {
+	color: #f06372;
 }
 
-.ListItem:nth-child(6n+2) .ListItem-marker {
-	color: #DA985C;
+.ListItem:nth-child(6n + 2) .ListItem-marker {
+	color: #da985c;
 }
 
-.ListItem:nth-child(6n+3) .ListItem-marker {
-	color: #FFD700;
+.ListItem:nth-child(6n + 3) .ListItem-marker {
+	color: #ffd700;
 }
 
-.ListItem:nth-child(6n+4) .ListItem-marker {
-	color: #8BC66F;
+.ListItem:nth-child(6n + 4) .ListItem-marker {
+	color: #8bc66f;
 }
 
-.ListItem:nth-child(6n+5) .ListItem-marker {
-	color: #47AFF5;
+.ListItem:nth-child(6n + 5) .ListItem-marker {
+	color: #47aff5;
 }
 
-.ListItem:nth-child(6n+6) .ListItem-marker {
-	color: #EA64DC;
+.ListItem:nth-child(6n + 6) .ListItem-marker {
+	color: #ea64dc;
 }

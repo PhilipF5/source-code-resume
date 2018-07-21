@@ -19,16 +19,8 @@ export default class WorkHistory extends Component<IProps> {
 					return 1;
 				}
 			})
-			.map(j => (
-				<Job
-					employer={j.employer}
-					location={j.location}
-					roles={j.roles}
-				/>
-			));
+			.map(j => <Job key={j.employer} employer={j.employer} location={j.location} roles={j.roles} />);
 
-		return (
-			<PageSection title="Work History">{jobs}</PageSection>
-		);
+		return <PageSection title="Work History">{jobs}</PageSection>;
 	}
 }

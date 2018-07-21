@@ -8,7 +8,7 @@ import "./Credential.css";
 interface IProps {
 	distinction: string;
 	earned: string;
-	location: { city: string, state: string };
+	location: { city: string; state: string };
 	name: string;
 	source: string;
 	topic: string;
@@ -32,13 +32,19 @@ export default class Credential extends Component<IProps> {
 	}
 
 	public getCredInfo(): JSX.Element {
-		return SyntacticEngine.applyOperator(SyntacticEngine.objectName(SyntacticEngine.snakeCase(this.props.name)), "=", SyntacticEngine.addCurlyBrackets(1, (<span>{SyntacticEngine.pascalCase(this.props.topic)}</span>)))
+		return SyntacticEngine.applyOperator(
+			SyntacticEngine.objectName(SyntacticEngine.snakeCase(this.props.name)),
+			"=",
+			SyntacticEngine.addCurlyBrackets(1, <span>{SyntacticEngine.pascalCase(this.props.topic)}</span>)
+		);
 	}
 
 	public getIssuer(): JSX.Element {
 		return (
-			<div>{SyntacticEngine.keyword("from")} {SyntacticEngine.string(this.props.source)}</div>
-		)
+			<div>
+				{SyntacticEngine.keyword("from")} {SyntacticEngine.string(this.props.source)}
+			</div>
+		);
 	}
 
 	public getIssueDate(): JSX.Element {

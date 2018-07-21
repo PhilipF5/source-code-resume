@@ -4,7 +4,7 @@ import { Component } from "react";
 import "./SkillType.css";
 
 interface Props {
-	skills: Array<{ name: string, top?: boolean }>;
+	skills: Array<{ name: string; top?: boolean }>;
 	type: string;
 }
 
@@ -33,7 +33,7 @@ export default class SkillType extends Component<Props> {
 		return this.sortAndRenderSkills(this.props.skills.filter(s => s.top));
 	}
 
-	private sortAndRenderSkills(skills: Array<{ name: string, top?: boolean }>) {
+	private sortAndRenderSkills(skills: Array<{ name: string; top?: boolean }>) {
 		return skills
 			.sort((a, b) => {
 				if (a.name < b.name) {
@@ -43,9 +43,7 @@ export default class SkillType extends Component<Props> {
 				}
 			})
 			.map(s => {
-				return (
-					<li key={s.name}>{s.name}</li>
-				);
+				return <li key={s.name}>{s.name}</li>;
 			});
 	}
 }

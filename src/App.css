@@ -4,19 +4,19 @@
 }
 
 .string {
-	color: #EBC06F;
+	color: #ebc06f;
 }
 
 .bracket-1 {
-	color: #FFD700;
+	color: #ffd700;
 }
 
 .equals {
-	color: #F06372;
+	color: #f06372;
 }
 
 .keyword {
-	color: #F06372;
+	color: #f06372;
 }
 
 .comment {
@@ -24,7 +24,7 @@
 }
 
 .reg-comment {
-	color: #5B6371;
+	color: #5b6371;
 }
 
 .alert {
@@ -32,17 +32,17 @@
 }
 
 .info {
-	color: #0098E1;
+	color: #0098e1;
 }
 
 .object {
-	color: #47AFF5;
+	color: #47aff5;
 }
 
 .name {
-	color: #8BC66F;
+	color: #8bc66f;
 }
 
 .type {
-	color: #21B8C4;
+	color: #21b8c4;
 }
