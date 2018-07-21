@@ -15,6 +15,7 @@ export default class Education extends Component<IProps> {
 			<Credential
 				distinction={c.distinction}
 				earned={c.earned}
+				location={c.location}
 				name={c.name}
 				source={c.source}
 				topic={c.topic}

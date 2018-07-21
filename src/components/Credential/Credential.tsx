@@ -8,6 +8,7 @@ import "./Credential.css";
 interface IProps {
 	distinction: string;
 	earned: string;
+	location: { city: string, state: string };
 	name: string;
 	source: string;
 	topic: string;

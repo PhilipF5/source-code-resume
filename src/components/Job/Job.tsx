@@ -6,12 +6,16 @@ import moment from "moment";
 import "./Job.css";
 
 interface IProps {
-	employer: string,
-	end: string,
-	highlights: string[],
-	location: string,
-	start: string,
-	title: string
+	employer: string;
+	location: string;
+	roles: Role[];
+}
+
+interface Role {
+	end?: string;
+	highlights: string[];
+	start: string;
+	title: string;
 }
 
 export default class Job extends Component<IProps> {

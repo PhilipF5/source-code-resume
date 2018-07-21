@@ -22,11 +22,8 @@ export default class WorkHistory extends Component<IProps> {
 			.map(j => (
 				<Job
 					employer={j.employer}
-					end={j.end}
-					highlights={j.highlights}
 					location={j.location}
-					start={j.start}
-					title={j.title}
+					roles={j.roles}
 				/>
 			));
 
