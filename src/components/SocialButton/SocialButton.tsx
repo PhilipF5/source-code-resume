@@ -16,8 +16,8 @@ export default class SocialButton extends Component<Props> {
 	public render() {
 		return (
 			<div className="SocialButton">
-				<a href={this.props.link}>
-					<FontAwesomeIcon icon={this.getIcon()} />
+				<a href={this.props.link} target="_blank">
+					<FontAwesomeIcon className="SocialButton-icon" icon={this.getIcon()} />
 					<div className="SocialButton-name">{this.props.service}</div>
 					<div className="SocialButton-text">{this.props.text}</div>
 				</a>
