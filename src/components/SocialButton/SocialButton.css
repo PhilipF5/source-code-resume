@@ -20,3 +20,27 @@
 		display: none;
 	}
 }
+
+.SocialButton:nth-child(6n + 1):hover {
+	color: #f06372;
+}
+
+.SocialButton:nth-child(6n + 2):hover {
+	color: #da985c;
+}
+
+.SocialButton:nth-child(6n + 3):hover {
+	color: #ffd700;
+}
+
+.SocialButton:nth-child(6n + 4):hover {
+	color: #8bc66f;
+}
+
+.SocialButton:nth-child(6n + 5):hover {
+	color: #47aff5;
+}
+
+.SocialButton:nth-child(6n + 6):hover {
+	color: #ea64dc;
+}
