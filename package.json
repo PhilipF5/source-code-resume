@@ -1,7 +1,10 @@
 {
-	"name": "personal-resume",
+	"name": "source-code-resume",
 	"version": "0.1.0",
 	"private": true,
+	"license": "MIT",
+	"author": "Philip Fulgham (https://www.philipfulgham.com)",
+	"repository": "github:PhilipF5/source-code-resume",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.0-14",
 		"@fortawesome/free-brands-svg-icons": "^5.1.0-11",
