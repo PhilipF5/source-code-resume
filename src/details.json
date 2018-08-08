@@ -1,0 +1,186 @@
+{
+	"me": {
+		"name": "Susan Cue",
+		"bio":
+			"Mid-level software engineer with full-stack experience working in the .NET, Node.js, and Ruby ecosystems",
+		"contacts": [
+			{
+				"link": "https://twitter.com/username",
+				"service": "Twitter",
+				"text": "@SusieQ_"
+			},
+			{
+				"link": "https://www.linkedin.com/in/username/",
+				"service": "LinkedIn",
+				"text": "susieQ"
+			},
+			{
+				"link": "https://github.com/username",
+				"service": "GitHub",
+				"text": "SusieQ"
+			},
+			{
+				"link": "https://m.me/username",
+				"service": "Messenger",
+				"text": "SusieQ.m"
+			},
+			{
+				"link": "https://www.website.com",
+				"service": "Website",
+				"text": "www.website.com"
+			}
+		]
+	},
+	"skills": {
+		"languages": [
+			{
+				"name": "C#",
+				"top": true
+			},
+			{
+				"name": "JavaScript",
+				"top": true
+			},
+			{
+				"name": "TypeScript",
+				"top": true
+			},
+			{
+				"name": "SQL"
+			},
+			{
+				"name": "HTML/CSS",
+				"top": true
+			},
+			{
+				"name": "Sass"
+			},
+			{
+				"name": "PHP"
+			},
+			{
+				"name": "VB.NET"
+			}
+		],
+		"technologies": [
+			{
+				"name": "ASP.NET Web API"
+			},
+			{
+				"name": "Node.js"
+			},
+			{
+				"name": "Angular",
+				"top": true
+			},
+			{
+				"name": "Ionic 2/3"
+			},
+			{
+				"name": "WPF"
+			},
+			{
+				"name": "Webpack"
+			},
+			{
+				"name": "Azure"
+			}
+		],
+		"tools": [
+			{
+				"name": "Git",
+				"top": true
+			},
+			{
+				"name": "Visual Studio Code",
+				"top": true
+			},
+			{
+				"name": "Visual Studio 2017"
+			},
+			{
+				"name": "Fish"
+			},
+			{
+				"name": "Bash"
+			},
+			{
+				"name": "macOS",
+				"top": true
+			},
+			{
+				"name": "Windows"
+			}
+		]
+	},
+	"experience": [
+		"Two years of professional experience working with Angular, ASP.NET Web API, and SQL Server in an Agile production environment",
+		"Five years working with Ruby building installable gems for Unix systems",
+		"Experience using Angular, React, and Vue to develop dynamic web front-ends",
+		"Experience with HTML5, CSS3, JavaScript, and PHP",
+		"Experience designing and implementing relational databases with multiple flavors of SQL",
+		"Experience with the Unix terminal, Node.js, and Git",
+		"Experience using various cloud resources in Microsoft Azure"
+	],
+	"intangibles": [
+		"Forward-thinking mentality; continually learning and using the newest technologies and techniques",
+		"Adept at self-studying and problem solving; evidenced by expert-level computer skills",
+		"Excellent writing and communication skills affirmed in both academic and professional settings"
+	],
+	"education": [
+		{
+			"source": "University of Delaware",
+			"name": "Bachelor of Science",
+			"topic": "Computer Science",
+			"distinction": "Magna Cum Laude",
+			"earned": "2010-08-14",
+			"location": {
+				"city": "Newark",
+				"state": "Delaware"
+			}
+		}
+	],
+	"jobs": [
+		{
+			"roles": [
+				{
+					"title": "Junior Software Developer",
+					"start": "2011-06-26",
+					"end": "2013-09-15",
+					"highlights": [
+						"Provided user requirements analysis, design and programming support for enhancement of Web application accessed by 5 million users worldwide.",
+						"Fueled additional revenue stream through responsive customer support, generating $18K in new license sales within first three weeks of new product release."
+					]
+				},
+				{
+					"title": "Software Engineer",
+					"start": "2013-09-18",
+					"end": "2016-09-30",
+					"highlights": [
+						"Contributed software engineering expertise in the development of products through the software lifecycle, from requirements defintion through successful deployment.",
+						"Facilitated customization of systems by encouraging software engineering team to adopt emerging standards for software application development architecture and tools.",
+						"Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs."
+					]
+				}
+			],
+			"employer": "Computer Tech Company",
+			"location": "Dover, Delaware"
+		},
+		{
+			"roles": [
+				{
+					"title": "Application Developer",
+					"start": "2016-10-01",
+					"highlights": [
+						"Facilitated customization of systems by encouraging software engineering team to adopt emerging standards for software application development architecture and tools.",
+						"Introduced methodologies and best practices that enhanced product definition, release processes and customization of applications to user needs.",
+						"Provided user requirements analysis, design and programming support for enhancement of Web application accessed by 5 million users worldwide.",
+						"Fueled additional revenue stream through responsive customer support, generating $18K in new license sales within first three weeks of new product release."
+					]
+				}
+			],
+			"employer": "A Fun Little Startup",
+			"location": "Palo Alto, California"
+		}
+	]
+}
